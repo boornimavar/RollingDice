@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: ;
+  background: #dc4c27;
+  background: linear-gradient(135deg, #dc4c27, #7f19d1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.part {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  background-color: rgb(241, 66, 125);
+  width: 100px;
+  color: black;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Sanchez", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.score p {
+  font-weight: 800;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+.player {
+  font-family: "Silkscreen", sans-serif;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.left {
+  background-color: rgba(255, 255, 255, 0.789);
+}
+
+.right {
+  background-color: rgba(255, 255, 255, 0.366);
+}
+
+.player {
+  color: black;
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.total {
+  color: rgb(241, 66, 125);
+}
+
+.current {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+}
+
+.buttons button {
+  border: 0;
+  padding: 9px;
+  border-radius: 15px;
+}
+
+.faces {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(241, 66, 125);
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+.top,
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.active {
+  background: rgba(0, 255, 0, 0.5); /* Example color */
+}
